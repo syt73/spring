@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>일러스트상세보기 페이지</title>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <link href="/assets/css/fix/header.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/fix/footer.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/illust/illustViewDetail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- 헤더 시작 -->
+<th:block th:insert="/fix/headerWordIllust.html :: headIllustFragment"/>
+
+<!--헤더 이미지-->
+<!--<div id="headerImgWrap" >
+    <img id="headerImg"src="/images/fix/headerImg_3.png" >
+</div>-->
+<!-- 헤더 종료 -->
+<div style="width : 100%;   max-width:1200px ; margin:0 auto; background-color: #fafafa; padding-top: 100px; padding-bottom: 100px; margin-bottom: 100px;">
+
+
+
+    <!--이미지 상세보기---------------------------------------------------------------------------------- -->
+    <div class="mainBox titleBox">
+        <p class="p title">relax time</p>
+        <p class="p titleInfo">
+            <span style="font-style: italic">by </span>
+            <span style="font-weight: bold">yewon_seo</span> &nbsp;
+            <span style="font-size: 13px">2022년 04월 30일</span>
+            <span></span>
+        </p>
+    </div>
+    <div class="mainBox">
+
+
+<!--        <img src="../../static/images/illustDetail/일러스트 상세 1.jpg" width="100%"/>-->
+
+        <img src="/images/illustDetail/일러스트 상세보기.jpg" width="100%" class="img"/>
+
+<!--        <img src="../../static/images/illustDetail/일러스트 상세2.jpg" width="100%"/>-->
+</div>
+
+
+    <div class="mainBox icons">
+        <div style="margin-right: 30px;">
+
+            <img src="/images/icon/하트.png"  class="iconImages emptyheart img"/>
+            <span>1,230</span>
+        </div>
+        <div style="margin-right: 5px">
+
+            <img src="/images/icon/눈.png" class="iconImages img"/>
+            <span>2,342</span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="postingBox">
+
+        <!--작가 프로필 ----------------------------------------------------------------------------------- -->
+        <div class="profiles">
+        <div class="profileBox">
+            <div class="profilepic">
+
+                <img src="/images/프사.jpg" width="100%" height="100%" class="img"/>
+            </div>
+            <div>
+            <span class="userNick">yewon_s</span>
+                <p class="p" style="margin: 8px 0px;">
+                    <span class="postSpan">Total Posts:</span>
+                    <span class="postSpan2">11개</span></p>
+                <div class="tagBtns">
+                    <button class="tagBtn">#힐링</button>
+                    <button class="tagBtn">#자연</button>
+                    <button class="tagBtn">#mood</button>
+                    <button class="tagBtn">#relax</button>
+                </div>
+
+            </div>
+        </div>
+            <div style="margin-right: 25px;">
+                <button class="chatBtn">PROFILE</button>
+                <button class="lookBtn">LIST</button>
+            </div>
+        </div>
+        <hr>
+        <!--게시물 더보기란------------------------------------------------------------------------------- -->
+
+        <p class="p postText"><span class="userId2">yewon_seo</span>님의 게시물 더 보기</p>
+
+        <div class="posts">
+        <div class="post">
+
+            <img src="/images/illustDetail/일러스트 상세 1.jpg" width="100%" height="100%"  class="img"/>
+            <div class="heart">❤ <p style="font-size: 12px;" class="p">1,213</p></div>
+        </div>
+        <div class="post">
+
+            <img src="/images/illustDetail/일러스트 상세2.jpg" width="100%" height="100%"  class="img"/>
+            <div class="heart">❤ <p style="font-size: 12px;" class="p">543</p></div>
+        </div>
+        <div class="post">
+
+            <img src="/images/illustDetail/일러스트 상세 3.jpg" width="100%" height="100%"  class="img"/>
+            <div class="heart">❤ <p style="font-size: 12px;" class="p">1,011</p></div>
+        </div>
+
+
+        </div>
+
+        <div class="posts">
+
+            <div class="post">
+
+                <img src="/images/illustDetail/일러스트 상세4.jpg" width="100%" height="100%"  class="img"/>
+                <div class="heart">❤ <p style="font-size: 12px;" class="p">23</p></div>
+            </div>
+            <div class="post">
+
+                <img src="/images/illustDetail/일러스트 상세5.jpg" width="100%" height="100%"  class="img"/>
+                <div class="heart">❤ <p style="font-size: 12px;" class="p">192</p></div>
+            </div>
+            <div class="post">
+
+                <img src="/images/illustDetail/일러스트 상세6.jpg" width="100%" height="100%"  class="img"/>
+                <div class="heart">❤ <p style="font-size: 12px;" class="p">0</p></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+   <!--이미지 클릭시 모달로 원본크기 보여주기 -->
+    <div class="modal">
+        <div class="modalBox">
+            <img src="/images/illustDetail/일러스트 상세보기.jpg"  class="img"/>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<th:block th:insert="/fix/footer.html :: footerFragment"/>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $emptyHeart = $('.emptyheart');
+    $emptyHeart.on("click", function () {
+        if($emptyHeart.attr("src")=="/images/icon/하트.png"){
+
+            $emptyHeart.attr("src","/images/icon/색칠 된 하트.png");
+        }else{
+            $emptyHeart.attr("src","/images/icon/하트.png");
+        }
+    });
+</script>
+<script src="/assets/js/fix/header.js"></script>
+</html>

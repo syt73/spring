@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>일러스트 목록</title>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <link href="/assets/css/fix/header.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/fix/footer.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/illust/illustList.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- 헤더 시작 -->
+<th:block th:insert="/fix/headerWordIllust.html :: headIllustFragment"/>
+
+<!--헤더 이미지-->
+<!--<div id="headerImgWrap" >
+    <img id="headerImg"src="/images/fix/headerImg_3.png" >
+</div>-->
+<!-- 헤더 종료 -->
+
+
+
+<div style="width : 100%;   max-width:1200px ; margin:0 auto; padding-top: 100px" class="wrapper">
+    <section class="illust-section">
+
+
+
+    <p class="Title2" style="margin-bottom: -19px;margin-top: -36px;">Category</p>
+    <div class="category">
+    <div class="slide_wrapper">
+        <ul class="slides">
+            <li>
+                <div class="imgDiv" style="background-color: #417A97; color: white">
+                    <img src="/images/illustCategory/동화.jpg" class="img" />
+                    <p>동화</p>
+                </div></li>
+            <li><div class="imgDiv" style="background-color: #F1E5B3; color: gray">
+                <img src="/images/illustCategory/디즈니.jpg" class="img" />
+                <p class="categoryName">디즈니</p>
+            </div></li>
+            <li><div class="imgDiv" style="background-color: #44CEFF; color: white">
+                <img src="/images/illustCategory/배경화.jpg" class="img" />
+                <p class="categoryName">배경</p>
+            </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #F2E6D8; color: gray">
+                    <img src="/images/illustCategory/수채화.jpg" class="img" />
+                    <p class="categoryName">수채화</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #F87DB3; color: white">
+                    <img src="/images/illustCategory/시티팝.jpg" class="img" />
+                    <p class="categoryName">시티팝</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #566D50; color: white">
+                    <img src="/images/illustCategory/인물화.jpg"class="img"  />
+                    <p class="categoryName">인물화</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #90C863; color: white">
+                    <img src="/images/illustCategory/지브리.jpg" class="img" />
+                    <p class="categoryName">지브리</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #676886; color: white">
+                    <img src="/images/illustCategory/추상화.jpg" class="img" />
+                    <p class="categoryName">추상화</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #E6AFAA; color: white;">
+                    <img src="/images/illustCategory/캐릭터.jpg" class="img" />
+                    <p class="categoryName">캐릭터</p>
+                </div>
+            </li>
+            <li>
+                <div class="imgDiv" style="background-color: #303030; color: white;">
+                    <img src="/images/illustCategory/흑백.jpg" class="img" />
+                    <p class="categoryName">흑백</p>
+                </div>
+            </li>
+
+
+        </ul>
+
+    </div>
+    <p class="controls">
+        <span class="prev">&lang;</span>
+        <span class="next">&rang;</span>
+    </p>
+    </div>
+
+
+    <p class="Title2 creatorarea">Best Creator</p>
+    <div class="illustratorDIv">
+
+
+        <div class="center cre">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사1.jpg" />
+
+            </div>
+            <p>zzang_9</p>
+        </div>
+
+        <div class="center cre">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사2.jpg" />
+
+            </div>
+            <p>ppicka</p>
+        </div>
+        <div class="center cre">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사3.jpg" />
+            </div>
+            <p>vaccineCat</p>
+        </div>
+        <div class="center cre">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사4.jpg" />
+            </div>
+            <p>dangdang</p>
+        </div>
+        <div class="center cre">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사5.jpg" />
+
+            </div>
+            <p>cute_dang</p>
+        </div>
+        <div class="center cre_x">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사1.jpg" />
+
+            </div>
+            <p>zzang_9</p>
+        </div>
+        <div class="center cre_x">
+            <div class="illustratorProfile">
+                <img src="/images/profileSample/프사5.jpg" />
+
+            </div>
+            <p>cute_dang</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p class="Title2 artWork" style="margin-bottom: 36px;">Art Work</p>
+    <div style="display: flex; justify-content: space-between;">
+        <div>
+            <button class="hashtag">#인물화</button>
+            <button class="hashtag">#food</button>
+            <button class="hashtag">#black&white</button>
+            <button class="hashtag">#character</button>
+        </div>
+
+        <div>
+
+            <div class="selectBox2 categorySelect">
+                <button class="label">정렬</button>
+                <ul class="optionList">
+                    <li class="optionItem">인기순</li>
+                    <li class="optionItem">최신순</li>
+
+                </ul>
+            </div>
+<!--           &lt;!&ndash; <select name="" id="" class="selectBox">-->
+<!--                <option value="">인기순</option>-->
+<!--                <option value="">최신순</option>-->
+<!--            </select>&ndash;&gt;-->
+        </div>
+    </div>
+
+    <div class="flex2 wrap" style=" background-color: #EAEAEA; margin-bottom: 100px; padding-bottom: 68px;">
+        <div class="box column1">
+            <div class="column cellCss" >
+                <img src="/images/일러스트 1.jpg" class="testWidth" />
+                <span class="heart">❤<span style="font-size: 12px;">1,213</span></span>
+
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 4.jpg" class="testWidth">
+                <span class="heart">❤<span style="font-size: 12px;">1,043</span></span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 3.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+        </div>
+        <div class="box column2">
+            <div class="column cellCss">
+                <img src="/images/일러스트 2.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 10.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 11.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+        </div>
+        <div class="box column3">
+            <div class="column cellCss">
+                <img src="/images/일러스트 7.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 6.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 9.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+        </div>
+        <div class="box column4">
+            <div class="column cellCss">
+                <img src="/images/일러스트 5.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 8.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 12.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+        </div>
+        <div class="box column5">
+            <div class="column cellCss">
+                <img src="/images/일러스트 13.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 14.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+            <div class="column cellCss">
+                <img src="/images/일러스트 15.jpg" class="testWidth">
+                <span class="heart">❤</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </section>
+</div>
+
+
+<th:block th:insert="/fix/footer.html :: footerFragment"/>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/assets/js/illust/illustList.js"></script>
+
+<script src="/assets/js/fix/header.js"></script>
+</html>
